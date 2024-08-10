@@ -1,17 +1,23 @@
 /*Header*/
 .nav-container {
   background-color: var(--navbar-bgc);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 170px;
-  /* border: 2px solid red; */
-  overflow: hidden;
+  width: 100%;
+  padding: 20px 150px;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 99;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .insure-logo{
@@ -59,23 +65,27 @@
 .nav-container .menu {
   position: absolute;
   right: 10%;
-  border: 2px solid red;
   display: none;
 }
+
 /*End Header*/
 
 /*Hero Section*/
 .hero-container {
   background-color: var(--d-violet);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100%;
   width: 100%;
-  padding: 70px 170px;
-  gap: 20px;
+  padding: 70px 150px;
   position: relative;
-  /* margin-top: 100px; */
+}
+
+.hero-container-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .hero-container .pattern .right {
@@ -91,8 +101,7 @@
 
 .hero-container .hero-content {
   color: var(--vl-gray);
-  /* border: 2px solid red; */
-  width: 50%;
+  width: 100%;
   padding-top: 100px;
   margin-top: 100px;
   position: relative;
@@ -137,7 +146,6 @@
 }
 
 .hero-container .hero-img {
-  /* border: 2px solid red; */
   margin-top: 100px;
   margin-bottom: -230px;
 }
@@ -145,7 +153,19 @@
 
 /*Service Section*/
 .service-container {
-  padding: 270px 170px 0;
+  height: 100%;
+  width: 100%;
+  padding: 270px 150px 0;
+}
+
+.service-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start; 
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .service-container h1 {
@@ -156,7 +176,6 @@
   margin-bottom: 70px;
   position: relative;
   padding-top: 50px;
-  /* border: 2px solid red; */
 }
 
 .service-container h1::before {
@@ -174,11 +193,9 @@
   display: flex;
   justify-content: space-evenly;
   align-items: stretch;
-  /* border: 2px solid red; */
 }
 
 .service-container .service-categ .categ-content {
-  /* border: 2px solid blue; */
   flex: 1;
   padding-right: 50px;
 }
@@ -203,19 +220,28 @@
   font-weight: 400;
   color: var(--d-gray-violet);
   line-height: 1.5rem;
-  /* text-align: justify; */
 }
 /*End Service Section*/
 
 /*CTA Section*/
-.cta-container {
-  margin: 150px 170px;
-  padding: 80px;
-  background-color: var(--d-violet);
+.cta-container{
+  height: 100%;
+  width: 100%;
+  padding: 150px;
+
+}
+
+.cta-wrapper{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+  background-color: var(--d-violet);
   position: relative;
+  padding: 70px;
+  overflow: hidden;
 }
 
 .cta-container .cta-pattern {
@@ -236,9 +262,17 @@
 
 /*Footer*/
 .footer-container{
-  padding: 60px 170px;
+  height: 100%;
+  width: 100%;
+  padding: 60px 150px;
   background-color: var(--vl-gray);
   position: relative;
+}
+
+.footer-wrapper{
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .footer-container .footer-pattern{
@@ -305,6 +339,26 @@
 .footer-container .links-container li:hover{
   text-decoration: underline;
 }
-
-
 /*End Footer*/
+
+/*Attribution*/
+.attribution {
+  font-style: italic;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--d-gray-violet);
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.attribution a {
+  color: var(--vd-violet);
+  transition: text-decoration-color 0.3s ease;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+  transition: text-decoration-color 0.3s ease;
+}
+/*End Attribution*/
