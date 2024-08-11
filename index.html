@@ -31,59 +31,33 @@
   </head>
 
   <body>
-    <!-- <header>
-      <div class="nav-container">
-        <img class="insure-logo" src="images/logo.svg" alt="Insure Logo" />
-
-        <div class="menu">
-          <img src="images/icon-hamburger.svg" alt="Menu Hamburger">
-          <img src="images/icon-close.svg" alt="Menu Close">
-        </div>
-
-        <nav class="navbar">
-          <a href="#">HOW WE WORK</a>
-          <a href="#">BLOG</a>
-          <a href="#">ACCOUNT</a>
-          <button class="dark view-plans-btn">VIEW PLANS</button>
-        </nav>
-      </div>
-    </header> -->
-
     <header>
       <div class="nav-container">
         <div class="nav-content">
           <img class="insure-logo" src="images/logo.svg" alt="Insure Logo" />
-    
-          <div class="menu">
-            <img src="images/icon-hamburger.svg" alt="Menu Hamburger">
-            <img src="images/icon-close.svg" alt="Menu Close">
-          </div>
-    
+
+          <img
+            src="images/icon-hamburger.svg"
+            alt="Menu Hamburger"
+            class="hmbgr" onclick="toggleMenu()"/>
+
+          <img
+            src="images/icon-close.svg"
+            alt="Menu Close"
+            class="close-hmbgr" onclick="toggleMenu()"
+          />
+
           <nav class="navbar">
             <a href="#">HOW WE WORK</a>
             <a href="#">BLOG</a>
             <a href="#">ACCOUNT</a>
             <button class="dark view-plans-btn">VIEW PLANS</button>
-          </nav>
-        </div>
-      </div>
-    </header>
 
-    <header>
-      <div class="nav-container">
-        <div class="nav-content">
-          <img class="insure-logo" src="images/logo.svg" alt="Insure Logo" />
-    
-          <div class="menu">
-            <img src="images/icon-hamburger.svg" alt="Menu Hamburger">
-            <img src="images/icon-close.svg" alt="Menu Close">
-          </div>
-    
-          <nav class="navbar">
-            <a href="#">HOW WE WORK</a>
-            <a href="#">BLOG</a>
-            <a href="#">ACCOUNT</a>
-            <button class="dark view-plans-btn">VIEW PLANS</button>
+            <img
+              class="m-nav-pattern"
+              src="images/bg-pattern-mobile-nav.svg"
+              alt=""
+            />
           </nav>
         </div>
       </div>
@@ -94,26 +68,38 @@
       <section>
         <div class="hero-container">
           <div class="hero-container-wrapper">
-          <div class="pattern">
-            <img class="right" src="images/bg-pattern-intro-right-desktop.svg" alt="">
-            <img class="left" src="images/bg-pattern-intro-left-desktop.svg" alt="">
-          </div>
+            <div class="pattern">
+              <img
+                class="desktop-right"
+                src="images/bg-pattern-intro-right-desktop.svg"
+                alt=""
+              />
+              <img
+                class="desktop-left"
+                src="images/bg-pattern-intro-left-desktop.svg"
+                alt=""
+              />
 
-          <div class="hero-content">
-            <h1>Humanizing<br class="break">your insurance.</h1>
-            <p>
-              Get your life insurance coverage easier and faster. We blend our
-              expertise<br class="break">and technology to help you find the plan that’s right
-              for you. Ensure you<br class="break">and your loved ones are protected.
-            </p>
-            <button class="light view-plans-btn">VIEW PLANS</button>
-          </div>
+              <img class="mobile-left" src="images/bg-pattern-intro-left-mobile.svg" alt="">
+              <img class="mobile-right" src="images/bg-pattern-intro-right-mobile.svg" alt="">
+            </div>
 
-          <div class="hero-img">
-            <img src="images/image-intro-desktop.jpg" alt="Family" />
+            <div class="hero-content">
+              <h1>Humanizing<br class="break"/> your insurance.</h1>
+              <p>
+                Get your life insurance coverage easier and faster. We blend our
+                expertise<br class="break" /> and technology to help you find the
+                plan that’s right for you. Ensure you <br class="break" />and
+                your loved ones are protected.
+              </p>
+              <button class="light view-plans-btn">VIEW PLANS</button>
+            </div>
+
+            <div class="hero-img">
+              <img id="image-intro-desktop" src="images/image-intro-desktop.jpg" alt="Intro Image">
+            </div>
           </div>
         </div>
-      </div>
       </section>
       <!--End Hero Section-->
 
@@ -155,7 +141,8 @@
         <div class="cta-container">
           <div class="cta-wrapper">
           <img class="cta-pattern" src="images/bg-pattern-how-we-work-desktop.svg" alt="">
-          <h1>Find out more<br class="break">about how we work</h1>
+          <img class="mobile-ctta-pattern" src="images/bg-pattern-how-we-work-mobile.svg" alt="">
+          <h1>Find out more<br class="break"> about how we work</h1>
           <button class="light view-plans-btn">HOW WE WORK</button>
         </div>
       </div>
@@ -164,7 +151,7 @@
     </main>
 
     <!--Footer-->
-    <footer>
+    <!-- <footer>
       <div class="footer-container">
         <div class="footer-wrapper">
         <img class="footer-pattern" src="images/bg-pattern-footer-desktop.svg" alt="">
@@ -228,7 +215,11 @@
         >. Coded by
         <a href="https://github.com/https-ty" target="_blank">Tyler.dev</a>
       </div>
-    </footer>
+    </footer> -->
     <!--End Footer-->
+
+    <!--JS Link-->
+    <script src="js/main.js"></script>
+    <script src="js/updating-img.js"></script>
   </body>
 </html>
