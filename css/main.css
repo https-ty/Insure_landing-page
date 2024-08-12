@@ -291,6 +291,7 @@
   padding: 60px 150px;
   background-color: var(--vl-gray);
   position: relative;
+  overflow: hidden;
 }
 
 .footer-wrapper {
