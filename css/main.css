@@ -311,6 +311,7 @@
   max-width: 1440px;
   margin: 0 auto;
   width: 100%;
+  /* border: 2px solid red; */
 }
 
 .footer-container .footer-pattern {
@@ -318,6 +319,10 @@
   top: 0;
   left: 0;
   z-index: 1;
+}
+
+.mobile-footer-pattern{
+  display: none;
 }
 
 .footer-container .icons-container {
@@ -359,6 +364,7 @@
   z-index: 3;
 
   list-style: none;
+  /* border: 2px solid red; */
 }
 
 .footer-container .links-container h1 {

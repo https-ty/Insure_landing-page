@@ -19,6 +19,15 @@
   .cta-container {
     padding: 150px 70px;
   }
+
+  /*Footer*/
+  .footer-container {
+    padding: 60px 70px;
+  }
+
+  .footer-container .links-container {
+    gap: 130px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -138,6 +147,11 @@
   .cta-container .cta-pattern {
     display: none;
   }
+
+  /*Footer*/
+  .footer-container .links-container {
+    gap: 80px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -151,7 +165,7 @@
     top: 100%;
     right: 0;
     left: 0;
-    height: 550px;
+    height: 100vh;
     padding: 50px 0;
     background-color: var(--vd-violet);
     display: flex;
@@ -228,11 +242,107 @@
   .m-nav-pattern {
     display: block;
     position: absolute;
-    bottom: 0;
+    bottom: 9%;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /*CTA Section*/
+  .cta-container {
+    padding: 150px 25px;
+  }
+
+  /*Footer*/
+  .footer-container {
+    padding: 90px 20px;
+  }
+
+  .footer-wrapper {
+    margin: 0;
+  }
+
+  .footer-container .links-container {
+    gap: 0;
+    padding-top: 0;
+  }
+
+  .footer-container .icons-container {
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 3;
+  }
+
+  .footer-container .icons-container .socials-icon img {
+    margin-top: 30px;
+  }
+
+  .footer-line {
+    margin-top: 30px;
+  }
+
+  .footer-container .links-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-container .footer-pattern {
+    display: none;
+  }
+
+  .mobile-footer-pattern {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 500px){
+  /*CTA Section*/
+  .cta-container {
+    padding: 150px 25px;
+  }
+
+  .cta-wrapper {
+    padding: 70px 28px;
+    margin: 0;
+    /* border: 2px solid yellow; */
+  }
+
+  .cta-container h1 {
+    font-size: 2.7rem;
+    margin-bottom: 40px;
+    z-index: 3;
+    line-height: 40px;
+  }
+
+  .cta-wrapper .break {
+    display: none;
+  }
+
+  .cta-wrapper .light {
+    margin-bottom: 0;
+  }
+
+  .mobile-ctta-pattern {
+    display: block;
+    position: absolute;
+    top: 0;
     right: 0;
   }
 
+  .cta-wrapper .view-plans-btn {
+    font-weight: 400;
+    font-size: 0.9rem;
+    padding: 10px 30px;
+  }
 }
+
 
 @media screen and (max-width: 425px) {
   /*Hero Section*/
@@ -276,45 +386,6 @@
   .service-container {
     padding: 120px 15px 0;
   }
-
-  /*CTA Section*/
-  .cta-container {
-    padding: 150px 25px;
-  }
-
-  .cta-wrapper{
-    padding: 70px 28px;
-    margin: 0;
-    /* border: 2px solid yellow; */
-  }
-
-  .cta-container h1{
-    font-size: 2.7rem;
-    margin-bottom: 40px;
-    z-index: 3;
-    line-height: 40px;
-  }
-
-  .cta-wrapper .break{
-    display: none;
-  }
-
-  .cta-wrapper .light{
-    margin-bottom: 0;
-  }
-
-  .mobile-ctta-pattern{
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-
-  .cta-wrapper .view-plans-btn {
-    font-weight: 400;
-    font-size: 0.9rem;
-    padding: 10px 30px;
-  }
 }
 
 @media screen and (max-width: 375px) {
@@ -346,7 +417,7 @@
   }
 
   /*CTA Section*/
-  .cta-wrapper{
+  .cta-wrapper {
     padding: 70px 10px;
   }
 }
