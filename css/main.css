@@ -32,7 +32,6 @@
 }
 
 .nav-container .navbar {
-  /* border: 2px solid red; */
   position: relative;
   display: flex;
   justify-content: center;
@@ -82,13 +81,6 @@
 .m-nav-pattern {
   display: none;
 }
-
-/* .nav-container .hmbgr {
-  width: auto; 
-  height: 100%; 
-  object-fit: contain;
-} */
-
 /*End Header*/
 
 /*Hero Section*/
@@ -177,12 +169,6 @@
   margin-top: 30px;
   margin-bottom: -230px;
 }
-
-/* .hero-container .hero-img img {
-  width: 540px;
-  height: auto;
-  display: block;
-} */
 /*End Hero Section*/
 
 /*Service Section*/
@@ -311,7 +297,6 @@
   max-width: 1440px;
   margin: 0 auto;
   width: 100%;
-  /* border: 2px solid red; */
 }
 
 .footer-container .footer-pattern {
@@ -359,12 +344,9 @@
   text-transform: uppercase;
   font-family: var(--font-body);
   font-weight: 700;
-
   position: relative;
   z-index: 3;
-
   list-style: none;
-  /* border: 2px solid red; */
 }
 
 .footer-container .links-container h1 {
